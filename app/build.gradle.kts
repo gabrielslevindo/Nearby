@@ -2,6 +2,9 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+
+    // Plugin para o Serialization
+    kotlin("plugin.serialization") version "2.0.21"
 }
 
 android {
@@ -40,6 +43,18 @@ android {
 }
 
 dependencies {
+
+    //Google Maps
+    implementation(libs.maps.compose)
+
+    //coil para leitura de dados web
+    implementation(libs.coil.compose)
+
+    // navigation
+    implementation(libs.navigation.compose)
+
+    // Serialization
+    implementation(libs.kotlin.serialization)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

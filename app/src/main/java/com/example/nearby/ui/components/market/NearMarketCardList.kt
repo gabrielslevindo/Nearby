@@ -16,9 +16,11 @@ import com.example.nearby.ui.theme.Typography
 fun NearMarketCardList(
     modifier: Modifier = Modifier, markets: List<Market>, onMarketClick: (Market) -> Unit
 ) {
+
     LazyColumn(
         modifier = modifier, verticalArrangement = Arrangement.spacedBy(16.dp)
     ) {
+        ->
         item {
             Text(
                 text = "Explore Locais perto de você", style = Typography.bodyLarge
@@ -26,15 +28,16 @@ fun NearMarketCardList(
         }
         items(
             items = markets,
-            key = { it.id }
-        ) { markets ->
+        ) { market ->
             NearMarketCard(
-                market = markets,
+                market = market,
                 onClick = {
-                    onMarketClick(markets)
+                    onMarketClick(market)
                 }
             )
         }
+
+
     }
 }
 

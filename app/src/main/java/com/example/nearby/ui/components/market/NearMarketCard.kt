@@ -113,7 +113,7 @@ private fun NearMarketCardPreview() {
             name = "Sabor Grill",
             description = "Churrascaria com Cortes nobres e buffet variado. Experiência completa para os amantes de carne. ",
             coupons = 10,
-            rules = emptyList(),
+//            rules = emptyList(),
             lat = -23.55974230991911,
             long = -46.65814845249887,
             address = "Av. Paulista - Bela Vista",
