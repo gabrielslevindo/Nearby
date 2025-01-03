@@ -30,7 +30,18 @@ val mockMarkets = listOf(
         name = "Sabor Grill",
         description = "Churrascaria com Cortes nobres e buffet variado. Experiência completa para os amantes de carne. ",
         coupons = 10,
-        rules = emptyList(),
+//        rules = listOf(
+//            Rule(
+//                id = "1",
+//                description = "Válido até 25/12",
+//                marketId = "012576ea-4441-4b8a-89e5-d5f32104c7c4"
+//            ) ,
+//            Rule(
+//                id = "2",
+//                description = "Disponível Apenas para Consumo no Local",
+//                marketId = "012576ea-4441-4b8a-89e5-d5f32104c7c4"
+//            )
+//        ),
         lat = -23.55974230991911,
         long = -46.65814845249887,
         address = "Av. Paulista - Bela Vista",
@@ -43,7 +54,7 @@ val mockMarkets = listOf(
         name = "Sabor Grill",
         description = "Churrascaria com Cortes nobres e buffet variado. Experiência completa para os amantes de carne. ",
         coupons = 10,
-        rules = emptyList(),
+//        rules = emptyList(),
         lat = -23.55974230991911,
         long = -46.65814845249887,
         address = "Av. Paulista - Bela Vista",
